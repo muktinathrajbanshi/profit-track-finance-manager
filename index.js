@@ -45,3 +45,46 @@ expenseTable.innerHTML="";
 
 let totalIncome=0;
 let totalExpense=0;
+
+incomes.forEach(i=>{
+incomeTable.innerHTML += `<tr><td>${i.name}</td><td>${i.amount}</td></tr>`;
+totalIncome += i.amount;
+});
+
+expenses.forEach(e=>{
+expenseTable.innerHTML += `<tr><td>${e.name}</td><td>${e.amount}</td></tr>`;
+totalExpense += e.amount;
+});
+
+let profit = totalIncome - totalExpense;
+
+document.getElementById("totalIncome").innerText=totalIncome;
+document.getElementById("totalExpense").innerText=totalExpense;
+document.getElementById("profitLoss").innerText=profit;
+
+updateChart(totalIncome,totalExpense);
+
+}
+
+let chart;
+
+function updateChart(income,expense){
+
+if(chart) chart.destroy();
+
+let ctx = document.getElementById("financeChart");
+
+chart = new Chart(ctx,{
+type:'pie',
+data:{
+labels:["Income","Expense"],
+datasets:[{
+data:[income,expense],
+backgroundColor:["green","red"]
+}]
+}
+});
+
+}
+
+updateUI();
