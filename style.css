@@ -1,0 +1,19 @@
+body {
+  font-family: Arial;
+  background: #f4f6fb;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #4a6cf7;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
