@@ -115,3 +115,20 @@ td {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+
+/* mobile responsive design started  */
+
+@media (max-width: 1200px) {
+  .dashboard {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card {
+    width: 220px;
+  }
+
+  .chart-container {
+    width: 90%;
+  }
+}
