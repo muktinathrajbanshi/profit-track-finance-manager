@@ -132,3 +132,28 @@ td {
     width: 90%;
   }
 }
+
+@media (max-width: 980px) {
+  .dashboard {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tables {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table-box {
+    width: 90%;
+  }
+
+  .chart-container {
+    width: 90%;
+  }
+}
