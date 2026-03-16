@@ -185,3 +185,27 @@ td {
     width: 95%;
   }
 }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 12px;
+  }
+
+  .dashboard {
+    padding: 10px;
+  }
+
+  .container {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .tables {
+    gap: 20px;
+    padding: 10px;
+  }
+}
