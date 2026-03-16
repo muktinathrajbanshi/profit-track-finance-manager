@@ -155,15 +155,48 @@ tr:hover {
 }
 
 .chart-container {
-  width: 600px;
-  margin: auto;
+  width: 650px;
+  margin: 40px auto;
   background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* mobile responsive design started  */
+
+@media (max-width: 1000px) {
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tables {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart-container {
+    width: 90%;
+  }
+
+  .table-box {
+    width: 90%;
+  }
+
+  .form-section {
+    width: 90%;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
 
 @media (max-width: 1200px) {
   .dashboard {
@@ -254,6 +287,16 @@ tr:hover {
   .tables {
     gap: 20px;
     padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    font-size: 22px;
+  }
+
+  .card p {
+    font-size: 24px;
   }
 }
 
