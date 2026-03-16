@@ -209,3 +209,23 @@ td {
     padding: 10px;
   }
 }
+
+@media (max-width: 480px) {
+  .card p {
+    font-size: 22px;
+  }
+
+  input {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px;
+  }
+
+  th,
+  td {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
