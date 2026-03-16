@@ -1,15 +1,27 @@
-body {
-  font-family: Arial;
-  background: #f4f6fb;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  color: #333;
 }
 
 header {
-  background: #4a6cf7;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .dashboard {
